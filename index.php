@@ -78,6 +78,61 @@
     echo "<br>";
     //imprime varios resultados
     echo "<p>Mi segundo codigo PHP,</p>  ", "<h3>mi tercer codigo PHP</h3>";
+
+    echo "<br>";
+
+    //funciones con Arrays
+    $amigos = array("jose<br>","david<br>","maria<br>","juan","diego<br>","rtaul<br>","sapo<br>","martiniano<br>");
+
+    $equipos = array("barcelona<br>","real<br>","inter<br>","velez<br>","city<br>","psg<br>","river<br>","fulham<br>");
+
+    echo "<br>";
+
+    $funcion = array_chunk($amigos,2);
+    print_r($funcion);
+
+    echo "<br>";echo "<br>";
+
+    $funcion2 = array_slice($amigos,4);
+    print_r($funcion2);
+
+    echo "<br>";echo "<br>";
+
+    $funcion3 = array_merge($amigos,$equipos);
+    print_r($funcion3);
+
+    echo "<br>";echo "<br>";
+
+    $buscar = array_search("juan",$amigos);
+    print_r($buscar);
+
+    echo "<br>";echo "<br>";
+
+    $revez = array_reverse($amigos);
+    print_r($revez);
+
+
+    // Matrices
+    $matriz = array(
+        array(1,2,3,4,5),
+        array(6,7,8,9,10),
+        array(11,12,13,14,15)
+    );
+    echo "<br>";echo "<br>";
+    echo $matriz[2][4]; //fila-columna
+
+    echo "<br>";echo "<br>";
+    foreach ($matriz as $value) {
+        print_r($value);
+    }
+    
+    echo "<br>";echo "<br>";
+    $length = count($matriz);
+    echo $length;
+
+    echo "<br>";echo "<br>";
+
+
     ?>
 </body>
 </html>
