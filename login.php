@@ -8,7 +8,7 @@
       // Verificar las credenciales
       if ($username == 'joseDavid' && $password == '1234') {
          $_SESSION['username'] = $username;
-         header('Location: dashboard.php'); // Redirigir a la página de dashboard o inicio
+         header('Location: index.php'); // Redirigir a la página de dashboard o inicio
          exit();
       } else {
          $error = "Credenciales incorrectas. Inténtalo de nuevo.";
